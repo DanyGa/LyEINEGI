@@ -79,6 +79,7 @@ namespace LyEINEGI
             this.btnEntidad.TabIndex = 1;
             this.btnEntidad.Text = "Buscar por entidad";
             this.btnEntidad.UseVisualStyleBackColor = false;
+            this.btnEntidad.Click += new System.EventHandler(this.btnEntidad_Click);
             // 
             // button3
             // 
@@ -221,7 +222,7 @@ namespace LyEINEGI
             this.cMuj20});
             this.lvLista.Font = new System.Drawing.Font("Century Schoolbook", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvLista.HideSelection = false;
-            this.lvLista.Location = new System.Drawing.Point(68, 405);
+            this.lvLista.Location = new System.Drawing.Point(61, 405);
             this.lvLista.Name = "lvLista";
             this.lvLista.Size = new System.Drawing.Size(959, 251);
             this.lvLista.TabIndex = 8;
@@ -385,6 +386,7 @@ namespace LyEINEGI
             this.Name = "FrmLyEINEGI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INEGI";
+            this.Load += new System.EventHandler(this.FrmLyEINEGI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
